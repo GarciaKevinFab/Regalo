@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FELIZ CUMPLEAÑOS PA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <!-- Message to activate the microphone and place candles -->
+    <div class="instruction-message">
+        ¡Activa tu micrófono y coloca las velas respectivas en la torta!
+    </div>
+
+    <div class="candle-count-display">
+        Velas En La Torta: <span id="candleCount">0</span>
+    </div>
+
+    <div class="cake">
+        <div class="plate"></div>
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top"></div>
+        <div class="icing"></div>
+        <div class="drip drip1"></div>
+        <div class="drip drip2"></div>
+        <div class="drip drip3"></div>
+    </div>
+
+    <!-- Placeholder for the image you want to add -->
+    <div id="image-holder">
+        <img id="birthday-image" src="" alt="Birthday Image" style="display: none;" />
+    </div>
+
+    <!-- Modal for the birthday message and letter -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Feliz Cumpleaños, Papá!</h2>
+            <p id="letter">
+                Papá, siempre has sido mi guía, mi ejemplo a seguir y la persona que ha estado a mi lado en cada momento
+                de mi vida. Desde que era niño, te veía como mi héroe, alguien fuerte y sabio que siempre tenía una
+                respuesta para todo. Me has enseñado el valor del esfuerzo, la disciplina, y la importancia de nunca
+                rendirse, lecciones que llevo conmigo cada día.
+                <br><br>
+                Hoy quiero aprovechar este día especial para agradecerte por todo lo que has hecho por mí. Por estar ahí
+                en los momentos difíciles, por cada consejo que me has dado y por todas las veces que me has apoyado sin
+                importar las circunstancias. Me has mostrado el verdadero significado de lo que es ser un hombre, y por
+                eso siempre te voy a admirar.
+                <br><br>
+                Sé que a veces no lo digo lo suficiente, pero te aprecio más de lo que las palabras pueden expresar.
+                Gracias por ser el mejor papá, por guiarme, por creer en mí, y por ser el ejemplo que sigo. Espero que
+                podamos seguir compartiendo más momentos juntos y que sigas siendo la gran inspiración que eres para mí.
+                <br><br>
+                ¡Feliz cumpleaños, papá! Te quiero mucho, y siempre estaré agradecido por todo lo que me has enseñado.
+            </p>
+        </div>
+    </div>
+
+    <!-- Birthday song and applause -->
+    <audio id="birthday-song" src="FC.mp3" autoplay loop></audio>
+    <audio id="blow-sound" src="Sonido_Soplar.mp3"></audio>
+    <audio id="applause-sound" src="Sonidos_Aplausos.mp3"></audio>
+    <audio id="post-blow-song" src="FabricandoFantasías_Tito Nieves.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
